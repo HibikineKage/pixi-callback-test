@@ -4,7 +4,11 @@
     "parcel": "^1.10.3",
     "typescript": "^3.1.6"
   },
+  "homepage": "https://hibikinekage.github.io/pixi-callback-test",
   "scripts": {
+    "build":"parcel build index.html --public-path '/pixi-callback-test/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html"
   },
   "dependencies": {
