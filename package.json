@@ -1,12 +1,13 @@
 {
   "devDependencies": {
     "@types/pixi.js": "^4.8.3",
+    "gh-pages": "^2.0.1",
     "parcel": "^1.10.3",
     "typescript": "^3.1.6"
   },
   "homepage": "https://hibikinekage.github.io/pixi-callback-test",
   "scripts": {
-    "build":"parcel build index.html --public-path '/pixi-callback-test/",
+    "build": "parcel build index.html --public-url '/pixi-callback-test/'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel index.html"
